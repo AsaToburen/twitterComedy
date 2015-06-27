@@ -1,0 +1,23 @@
+<navigation></navigation>
+<div class="row">
+    <div class="container col-md-3 col-md-offset-1">
+      <div class="media">
+        <img alt="{{user.name}}">
+      </div>
+    </div>
+    <div class="container detail col-md-6 col-md-offset-1">
+        <div class="media" ng-repeat="entry in entries">
+            <div class="media-left">
+                <img class="media-object" ng-src="{{entry.user.profile_image_url}}" alt="{{entry.user.name}">
+            </div>
+            <div class="media-body">
+                <a ng-href="#/comedians/{{entry.user.screen_name}}">
+                    <h4 class="media-heading">{{entry.user.name}}</h4>
+                </a>
+                <a class="handle" ng-href="{{entry.user.url}}">@{{entry.user.screen_name}}</a>
+                <p>{{entry.text}}</p>
+                <span class="pull-right">{{correctTime(entry.created_at) | date:'shortTime'}}</span>
+            </div>
+        </div>
+    </div>
+</div>

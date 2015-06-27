@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="twitterComedy">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twitter Search</title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/styles/styles.min.css">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./app.module.js"></script>
+    <script src="./services/main.service.js"></script>
+    <script src="./components/thumbnails/thumbnail.controller.js"></script>
+    <script src="./components/totalfeed/totalfeed.controller.js"></script>
+    <script src="./components/detail/detail.controller.js"></script>
+    <script src="./components/navigation/nav.directive.js"></script>
+    <script src="./components/thumbnails/thumbnail.directive.js"></script>
+    <script src="./components/totalfeed/totalfeed.directive.js"></script>
+</head>
+
+<body>
+    <navigation></navigation>
+    <ng-view class="fadeIn"></ng-view>
+</body>
+
+</html>

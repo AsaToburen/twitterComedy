@@ -1,0 +1,15 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+        <h2 class="navbar-brand">Twitter Open Mic</h2>
+        <img alt="Twitter Microphone" height="75px" src="./dist/images/twitterMic_icon.png">
+    <ul class="nav nav-pills primary pull-right">
+        <li ng-class="{active: isActive('/')}">
+            <a href="#/">Home</a>
+        </li>
+        <li ng-class="{active: isActive('/comedians/feed')}">
+            <a href="#/comedians/feed/">Latest Tweets</a>
+        </li>
+        <li>
+            <a href="#/comedians/" ng-class="{active: isActive('/comedians')}">Profile List</a>
+        </li>
+    </ul>
+</nav>

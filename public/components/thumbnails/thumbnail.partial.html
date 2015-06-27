@@ -1,0 +1,12 @@
+<div class="container profiles">
+    <div class="row">
+        <a ng-repeat="comedian in comedians" ng-href="#/comedians/{{comedian.screen_name}}">
+            <div class="col-md-4" >
+                <div class="thumbnail">
+                    <img ng-src="{{comedian.profile_image_url}}" alt="{{comedian.name}}">
+                    <h3>{{comedian.name}}</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+body {
+  height: 40em;
+  background-image: url('../../assets/images/twitter_comedy.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.jumbotron {
+  margin-top: 10em; }
+
+nav ul.nav {
+  margin: 1em 4em 0 0; }
+  nav ul.nav a {
+    background-color: #fff; }
+    nav ul.nav a:hover {
+      background-color: #286090;
+      color: #fff; }
+  nav ul.nav a.active {
+    background-color: #337ab7;
+    color: #fff; }
+
+.navbar {
+  padding-left: 2em; }
+  .navbar .navbar-brand {
+    margin-right: 1em;
+    color: #fff; }
+
+div.container {
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+  opacity: 1; }
+  div.container div.row {
+    margin-top: 7em; }
+
+.thumbnail img {
+  margin: 0;
+  padding: .5em 1em .5em .5em;
+  display: inline-block; }
+.thumbnail h3 {
+  display: inline;
+  font-size: 1.6em; }
+.thumbnail:hover {
+  background-color: #286090; }
+  .thumbnail:hover h3 {
+    color: #fff; }
+
+total-feed {
+  -webkit-transition: all 2s ease;
+          transition: all 2s ease; }
+  total-feed .container {
+    margin-top: 6em;
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 0;
+    margin-right: none; }
+    total-feed .container .media {
+      padding: 15px;
+      margin-top: 0; }
+      total-feed .container .media h4 {
+        display: inline-block; }
+      total-feed .container .media:hover {
+        background-color: whitesmoke; }
+
+div.detail {
+  margin-top: 6em;
+  background-color: rgba(245, 245, 245, 0.8); }
+
+a.handle {
+  color: #333; }
+
+div.container.ng-enter {
+  opacity: 0; }
+
+div.container {
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+  opacity: 1; }
+
+.fadeIn {
+  -webkit-transition: all 1s linear;
+          transition: all 1s linear;
+  opacity: 1; }
+
+.fadeIn.ng-enter {
+  opacity: 0; }
+
+.profiles {
+  -webkit-transition: all 1s linear;
+          transition: all 1s linear;
+  opacity: 1; }
+
+.profiles.ng-animate {
+  opacity: 0; }
+
+.fadeIn.ng-leave {
+  opacity: 0; }

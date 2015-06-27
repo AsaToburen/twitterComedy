@@ -1,0 +1,120 @@
+body {
+    height: 40em;
+    background-image: url('../../assets/images/twitter_comedy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    margin-top: 10em;
+}
+
+nav ul.nav {
+    margin: 1em 4em 0 0;
+    a {
+        background-color: #fff;
+        &:hover {
+            background-color: #286090;
+            color: #fff;
+        }
+    }
+    a.active {
+        background-color: #337ab7;
+        color: #fff;
+    }
+}
+
+.navbar {
+    padding-left: 2em;
+    .navbar-brand {
+        margin-right: 1em;
+        color: #fff;
+    }
+}
+
+div.container {
+    transition: all 1s ease;
+    opacity: 1;
+    div.row {
+        margin-top: 7em;
+    }
+}
+
+.thumbnail {
+    img {
+        margin: 0;
+        padding: .5em 1em .5em .5em;
+        display: inline-block;
+    }
+    h3 {
+        display: inline;
+        font-size: 1.6em;
+    }
+    &:hover {
+        background-color: #286090;
+        h3 {
+            color: #fff;
+        }
+    }
+}
+
+total-feed {
+    transition: all 2s ease;
+    .container {
+        margin-top: 6em;
+        background-color: rgba(245, 245, 245, 0.8);
+        padding: 0;
+        margin-right: none;
+        .media {
+            padding: 15px;
+            margin-top: 0;
+            h4 {
+                display: inline-block;
+            }
+            &:hover {
+                background-color: rgba(245, 245, 245, 1);
+            }
+        }
+    }
+}
+
+div.detail {
+    margin-top: 6em;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+a.handle {
+    color: #333;
+}
+
+div.container.ng-enter {
+    opacity: 0;
+}
+
+div.container {
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+.fadeIn {
+    transition: all 1s linear;
+    opacity: 1;
+}
+
+.fadeIn.ng-enter {
+    opacity: 0;
+}
+
+.profiles {
+    transition: all 1s linear;
+    opacity: 1;
+}
+
+.profiles.ng-animate {
+    opacity: 0;
+}
+
+.fadeIn.ng-leave {
+    opacity: 0;
+}
