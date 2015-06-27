@@ -1,6 +1,6 @@
 body {
   height: 40em;
-  background-image: url('../../assets/images/twitter_comedy.jpg');
+  background-image: url('../images/twitter_comedy.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
