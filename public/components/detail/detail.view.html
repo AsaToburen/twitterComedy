@@ -1,11 +1,12 @@
 <navigation></navigation>
 <div class="row">
-    <div class="container col-md-3 col-md-offset-1">
-      <div class="media">
-        <img alt="{{user.name}}">
-      </div>
+    <div class="container col-md-5 col-md-offset-1">
+        <div  ng-show="entries[0].user.name" class="media profile" ng-model="entries">
+        <h1 class="media-heading">{{entries[0].user.name}}</h1>
+            <img ng-src="{{profileUrl}}" alt="{{entries[0].user.name}}" class="media-object img-rounded">
+        </div>
     </div>
-    <div class="container detail col-md-6 col-md-offset-1">
+    <div ng-show="entries[0].user.name" class="container detail col-md-5">
         <div class="media" ng-repeat="entry in entries">
             <div class="media-left">
                 <img class="media-object" ng-src="{{entry.user.profile_image_url}}" alt="{{entry.user.name}">

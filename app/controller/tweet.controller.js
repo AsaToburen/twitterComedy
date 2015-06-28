@@ -4,7 +4,8 @@ module.exports.getComedians = function(req, res) {
 
   var params = {
     list_id: 206744608,
-    slug: "comedians"
+    slug: "comedians",
+    count: 100
   };
 
   client.get('lists/members', params, function(error, tweets, response) {

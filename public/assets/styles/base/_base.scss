@@ -36,6 +36,17 @@ nav ul.nav {
 div.container {
     transition: all 1s ease;
     opacity: 1;
+    div.profile {
+        margin-top: 7.5em;
+        position: fixed;
+        .media-heading {
+            background-color: #fff;
+            opacity: .8;
+            padding: .5em;
+            border-radius: 5px;
+        }
+    }
+
     div.row {
         margin-top: 7em;
     }
@@ -80,7 +91,9 @@ total-feed {
 }
 
 div.detail {
-    margin-top: 6em;
+    margin-top: 7.5em;
+    padding-top: 1em;
+    border-radius: 5px;
     background-color: rgba(245, 245, 245, 0.8);
 }
 
